@@ -31,12 +31,19 @@ namespace Queue
 
         public string Dance()
         {
-            int l = girls.Size > boys.Size ? girls.Size : boys.Size;
+            Queue<string> l = girls.Size > boys.Size ? girls : boys;
             string output = "";
-            for (int i = 0; i < l; i++)
+            for (int i = 0; i < l.Size; i++)
             {
-                output += string.Format("{0} и {1}", girls.Deque., boys.Deque)
+                output += string.Format("{0} и {1}\n", girls.Deque().Split(' ')[1], boys.Deque().Split(' ')[1]);
             }
+            output += "В очереди " + l.Size;
+            if (l.Size == girls.Size)
+                output += " девочек. И первая из них — ";
+            else
+                output += " мальчиков. И первый из них — ";
+            output += l.Front().Split(' ')[1];
+            return output;
         }
     }
 }

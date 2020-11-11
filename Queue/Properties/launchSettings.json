@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Queue": {
+      "commandName": "Project"
+    }
+  }
+}

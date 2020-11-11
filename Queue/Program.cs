@@ -15,6 +15,11 @@ namespace Queue
             cashier.DeliverOrder();
             cashier.DeliverOrder();
             cashier.DeliverOrder();
+
+            Console.WriteLine("");
+
+            DanceFloor danceFloor = new DanceFloor(@"C:\Users\nikit\Source\Repos\nikitazyz\Queue\Queue\Dance.txt");
+            Console.WriteLine(danceFloor.Dance());
         }
     }
 }
